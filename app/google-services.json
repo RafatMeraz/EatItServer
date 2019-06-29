@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "421993972819",
+    "firebase_url": "https://androideatit-3db42.firebaseio.com",
+    "project_id": "androideatit-3db42",
+    "storage_bucket": "androideatit-3db42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421993972819:android:c98f4223e1ec5530",
+        "android_client_info": {
+          "package_name": "com.practise.eatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421993972819-j8i6ov9n5favnqdp3ea9ltdriqoeg9l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzI44jvPkdqdpHDgKNzo3zgKVl_GravCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421993972819-j8i6ov9n5favnqdp3ea9ltdriqoeg9l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421993972819:android:83a0ae262efe0302",
+        "android_client_info": {
+          "package_name": "com.practise.eatitserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421993972819-j8i6ov9n5favnqdp3ea9ltdriqoeg9l4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzI44jvPkdqdpHDgKNzo3zgKVl_GravCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421993972819-j8i6ov9n5favnqdp3ea9ltdriqoeg9l4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
