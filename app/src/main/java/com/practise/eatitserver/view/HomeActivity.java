@@ -244,9 +244,9 @@ public class HomeActivity extends AppCompatActivity
                 menuViewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-//                        Intent foodListIntent = new Intent(getApplicationContext(), FoodList.class);
-//                        foodListIntent.putExtra("categoryId", menuAdapter.getRef(position).getKey());
-//                        startActivity(foodListIntent);
+                        Intent foodListIntent = new Intent(getApplicationContext(), FoodListActivity.class);
+                        foodListIntent.putExtra("categoryId", menuAdapter.getRef(position).getKey());
+                        startActivity(foodListIntent);
                     }
                 });
             }

@@ -26,4 +26,7 @@
     <string name="name">Name</string>
     <string name="select_image">Select Image</string>
     <string name="upload">Upload</string>
+    <string name="description">Description</string>
+    <string name="discount">Diiscount</string>
+    <string name="price">Price</string>
 </resources>
