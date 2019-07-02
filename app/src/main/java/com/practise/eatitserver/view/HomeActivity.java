@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity
     private StorageReference mMenuPictureSR;
     private FirebaseRecyclerAdapter<Category, MenuViewHolder> menuAdapter;
     private RecyclerView menuRecyclerView;
-    private Category newCategory;
+    private Category newCategory ;
     private Uri saveUri;
     private final int PICK_IMG_REQUEST = 71;
 
@@ -111,6 +111,7 @@ public class HomeActivity extends AppCompatActivity
         userNameTV = headerView.findViewById(R.id.navUserNameTV);
         userEmailTV = headerView.findViewById(R.id.navUserEmailTV);
 
+        newCategory = new Category();
     }
 
     private void showDialog() {
@@ -146,6 +147,7 @@ public class HomeActivity extends AppCompatActivity
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 if (newCategory != null){
+                    newCategory.setName(foodNameET.getText().toString());
                     mCategoryDR.push().setValue(newCategory);
                     Snackbar.make(drawer, "New Category "+newCategory.getName()+" was added!", Snackbar.LENGTH_SHORT)
                             .show();
@@ -178,7 +180,7 @@ public class HomeActivity extends AppCompatActivity
                             imgFolder.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
-                                    newCategory = new Category(foodNameET.getText().toString(), uri.toString());
+                                    newCategory.setImage(uri.toString());
                                 }
                             });
                         }
@@ -302,13 +304,13 @@ public class HomeActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        Intent intent;
         if (id == R.id.nav_menu) {
             // Handle the camera action
         } else if (id == R.id.nav_cart) {
 
         } else if (id == R.id.nav_orders) {
-
+            startActivity(new Intent(getApplicationContext(), OrderStatusActivity.class));
         } else if (id == R.id.nav_log_out) {
             signOut();
         }
